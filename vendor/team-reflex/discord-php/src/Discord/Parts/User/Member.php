@@ -500,7 +500,7 @@ class Member extends Part
      */
     protected function getIdAttribute(): string
     {
-        return $this->attributes['id'] ?? $this->attributes['user']->id;
+        return (string)$this->attributes['id'] ?? $this->attributes['user']->id;
     }
 
     /**
